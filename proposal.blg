@@ -4,44 +4,44 @@ The top-level auxiliary file: proposal.aux
 The style file: abbrv-doi-hyperref.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: proposal.bib
-You've used 6 entries,
+You've used 3 entries,
             2577 wiz_defined-function locations,
-            644 strings with 5670 characters,
-and the built_in function-call counts, 6347 in all, are:
-= -- 1389
-> -- 86
-< -- 219
-+ -- 254
-- -- 33
-* -- 338
-:= -- 875
-add.period$ -- 20
-call.type$ -- 6
-change.case$ -- 31
+            604 strings with 4708 characters,
+and the built_in function-call counts, 1180 in all, are:
+= -- 97
+> -- 33
+< -- 2
++ -- 14
+- -- 10
+* -- 50
+:= -- 175
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 85
-empty$ -- 251
-format.name$ -- 28
-if$ -- 1707
+cite$ -- 3
+duplicate$ -- 45
+empty$ -- 184
+format.name$ -- 10
+if$ -- 311
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 68
-num.names$ -- 12
-pop$ -- 30
+int.to.str$ -- 3
+missing$ -- 2
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 19
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 11
 quote$ -- 0
-skip$ -- 59
+skip$ -- 33
 stack$ -- 0
-substring$ -- 384
-swap$ -- 20
-text.length$ -- 127
+substring$ -- 48
+swap$ -- 14
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
+type$ -- 12
 warning$ -- 0
-while$ -- 31
-width$ -- 7
-write$ -- 220
+while$ -- 9
+width$ -- 4
+write$ -- 36

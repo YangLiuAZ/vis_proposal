@@ -52,7 +52,7 @@
 %% This is how authors are specified in the journal style
 
 %% indicate IEEE Member or Student Member in form indicated below
-\author{Your Name Here}
+\author{Yang Liu, Zhenge Zhao}
 \authorfooter{
 %% insert punctuation at end of each item
 \item
