@@ -1,5 +1,14 @@
 \begin{thebibliography}{1}
 
+\bibitem{anglin1994mathematics}
+\href{https://books.google.com/books?id=13dKav77vGsC}{W.~Anglin}.
+\newblock \href{https://books.google.com/books?id=13dKav77vGsC}{{\em
+  Mathematics: A Concise History and Philosophy: A Concise History and
+  Philosophy}}.
+\newblock \href{https://books.google.com/books?id=13dKav77vGsC}{Readings in
+  Mathematics}. \href{https://books.google.com/books?id=13dKav77vGsC}{Springer
+  New York}, \href{https://books.google.com/books?id=13dKav77vGsC}{1994}.
+
 \bibitem{bendakir2006using}
 N.~Bendakir and E.~A{\"\i}meur.
 \newblock Using association rules for course recommendation.
@@ -10,6 +19,40 @@ N.~Bendakir and E.~A{\"\i}meur.
 J.~Sandvig and R.~Burke.
 \newblock Aacorn: A cbr recommender for academic advising.
 \newblock Technical report, Technical Report TR05-015, DePaul University, 2005.
+
+\bibitem{schwartz2009paradox}
+\href{https://books.google.com/books?id=g422yyua-P8C}{B.~Schwartz}.
+\newblock \href{https://books.google.com/books?id=g422yyua-P8C}{{\em The
+  Paradox of Choice: Why More Is Less, Revised Edition}}.
+\newblock \href{https://books.google.com/books?id=g422yyua-P8C}{HarperCollins},
+  \href{https://books.google.com/books?id=g422yyua-P8C}{2009}.
+
+\bibitem{Shneiderman:1996:ETD:832277.834354}
+\href{http://dl.acm.org/citation.cfm?id=832277.834354}{B.~Shneiderman}.
+\newblock \href{http://dl.acm.org/citation.cfm?id=832277.834354}{The eyes have
+  it: A task by data type taxonomy for information visualizations}.
+\newblock \href{http://dl.acm.org/citation.cfm?id=832277.834354}{In {\em
+  Proceedings of the 1996 IEEE Symposium on Visual Languages}},
+  \href{http://dl.acm.org/citation.cfm?id=832277.834354}{VL '96},
+  \href{http://dl.acm.org/citation.cfm?id=832277.834354}{pp. 336--}.
+  \href{http://dl.acm.org/citation.cfm?id=832277.834354}{IEEE Computer
+  Society}, \href{http://dl.acm.org/citation.cfm?id=832277.834354}{Washington,
+  DC, USA}, \href{http://dl.acm.org/citation.cfm?id=832277.834354}{1996}.
+
+\bibitem{Su:2009:SCF:1592474.1722966}
+\href{http://dx.doi.org/10.1155/2009/421425}{X.~Su and T.~M. Khoshgoftaar}.
+\newblock \href{http://dx.doi.org/10.1155/2009/421425}{A survey of
+  collaborative filtering techniques}.
+\newblock \href{http://dx.doi.org/10.1155/2009/421425}{{\em Adv. in Artif.
+  Intell.}}, \href{http://dx.doi.org/10.1155/2009/421425}{2009:4:2--4:2},
+  \href{http://dx.doi.org/10.1155/2009/421425}{Jan. 2009}.
+  \href{http://dx.doi.org/10.1155/2009/421425}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1155\discretionary{/}{%
+}{/}2009\discretionary{/}{%
+}{/}421425}}}
+
 
 \bibitem{walshaw2000multilevel}
 C.~Walshaw.

@@ -1,36 +1,41 @@
 \section{Proposed Work} % or "Research Plan"
 \label{sec:proposed}
 
-Describe your proposed work here. You may refer to other sections so as not to
-repeat yourself -- for example, referencing Section~\ref{sec:background}.
+Our ultimate goal, is to design a visualization tool for understanding courses interactions. For this, we design three components within the interface of the tool to support the analysis task:
+A) Courses global view: a map graph, illustrated in part A of~\ref{fig:overview} to deploy all the courses in a map, courses are connected with arrows. A high level course (like 4XX) will be drawn bigger compared to the prerequisite courses. Also, we use the thickness of arrows to show the similarity strength between two courses. Naturally the higher the similarity measures, the thicker the arrow. For This map graph we follow common ``overview first, zoom and filter, details on demand" navigation parttern~\cite{Shneiderman:1996:ETD:832277.834354}. Each major is depicted with different colors. The view consist a zoomable navigation map and a thumbnail which show you the position and scaling of the current area.
+B) Course view: a node-link diagram, illustrated in part B of~\ref{fig:overview}, which details the course you select or your selected arrow pointing at  from courses global view. The specified course will be put in the center, with all the courses directing to it. The size of the circles and the thickness of the arrows will still follow the provision we set in part1.
 
-You may want to use figures to illustrate your point, such as
-Figure~\ref{fig:sample}.
+C) Grades view: a parallel coordinates diagram, illustrated in part C of~\ref{fig:overview}, to show the specific grades changes for students who have taken both courses. Each line’s start point is the score that a student gets in the previous course, and the end point is the score the same students gets in the later course. Different colors are utilized to show the grade section for the first course. The view also contains a timeline slider which can be dragged to show all the lines in the padded area.
 
 \begin{figure}[h]
  \centering % avoid the use of \begin{center}...\end{center} and use \centering instead (more compact)
- \includegraphics[width=1.5in]{figs/sample}
- \caption{Figure illustrating some proposed desgins.}
- \label{fig:sample}
+ \includegraphics[width=\linewidth]{figs/overview}
+ \caption{Our Interface consists of three components: A) a global navigation map for all the course clusters ;B) For the selected Course, all the potential prerequisites for our focus course ;C)For the selected arrow, an interface to show all the transition of scores of students taking both two courses.}
+ \label{fig:overview}
 \end{figure}
 
 \subsection{Data}
 \label{sec:data}
 
-Describe the data and your access to it here.
+Towards this end, we performed a pilot study using student data from a Canadian research university.  This data included all students who had taken a computer science course at that university between September 2001 and December 2011.
+
+The data was in a comma-separated file made up of rows with 6 fields:  a unique, anonymous student identifier, the term (which could be Spring, Summer or Fall and the year), the subject ID (such as “CS” or “ENGL”), the course code (such as “101”), the percentile grade received and the student’s major.
+
+The data needs to be preprocessed in preparation for the similarity calculation and the visualization.  A unique, sequential identifier was added to each line.  There's a variety of identifiers for problems in a course, such as “WD” indicating withdrawal, “DNR” indicating the final exam was not written.  These were replaced with 0 so that there would be a consistent, natural number domain for the grades.  Some of the course codes had an optional letter suffix, which would indicate if it was offered online or at another campus.  We ignore them because they don't affect course content a lot.
+
+We removed courses and corresponding records with less than 10 students, on the basis that it was insufficient to measure the interactions between two courses. After these adjustments, the training set consisted of 37,392 students with data about 468,632 courses they took. There were 2,326 unique courses in the dataset.
 
 \subsection{Evaluation}
 \label{sec:eval}
 
-Describe your plan for evaluating your work, even if it does not fit in the
-timeframe of this project. Without time constraints, what would you? Do you
-have the resources (people, time, equipment, data, money) to implement this
-plan in the future?
+It is lucky that we don't rely on explicit prerequisite information to train our model. So the first evaluation would be comparing our model's output with existing prerequisite information found online.
+
+If that goes well, we can invite other groups in this class to evaluate it by agreeing to participate their evaluation.
+
+If we go to the full-scale evaluation, the population must be carefully selected. I'd suggest including academic advisors both having experience with other tools and totally fresh to this kind of tool. Since academic advisors usually are well-knowledged about the course content by simply looking at the course name, it's also interesting to let students(other than freshman) in different years participate and evaluate the result without knowing the course content in great detail.
 
 \subsection{Timeline}
 \label{sec:timeline}
-
-Set up milestones for your project and  summarize in Table~\ref{tab:milestones}.
 
 \begin{table}[h]
 %% Table captions on top in journal version
@@ -41,12 +46,12 @@ Set up milestones for your project and  summarize in Table~\ref{tab:milestones}.
    \begin{tabular}{r|r}
      Date & Milestone (\%)\\
    \hline
-     Sep 30 & Interviews conducted, initial task abstractions\\
-     Oct  2 & Five datasets uploaded \\
-     Oct  7 & Initial design sketches\\
-     Oct 14 & Paper prototypes of 3 initial designs\\
-     Oct 21 & Wireframe of central design \\
-     Nov 7 & Initial prototype of design 
+     Oct 7 & D3 library setup, familiar with node-link graph and parallel coordinates\\
+     Oct 15 & Data preprocessing for D3 drawing \\
+     Oct 22 & Prototype Drawing\\
+     Oct 30 & Extract explicit prerequisite info from university website\\
+     Nov 7 & Evaluate prototype with explicit prerequisite\\
+     Nov 14 & Evaluate prototype with class groups
    \end{tabular}
 \end{table}
 
